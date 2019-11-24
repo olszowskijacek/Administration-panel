@@ -1,0 +1,29 @@
+.statistic {
+    position: relative;
+    width: 80%;
+    left: 220px;
+    // margin-left: 220px;
+    background-color: $light-color;
+    margin-top: 5%;
+    font-family: $font-family;
+    height: 100vh;
+    
+    .title {
+        border-bottom: 1px solid $grey-dark-color;
+        padding: 5px;
+        text-transform: uppercase;
+        color: $grey-dark-color;
+    }
+    .calendar {
+       
+        padding: 20px;
+        border-bottom: 1px solid $grey-dark-color;
+        button {
+            background-color: $orange-dark-color;
+            border: none;
+            span{
+                color: white;
+            }
+        }
+    }
+}
