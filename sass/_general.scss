@@ -1,10 +1,10 @@
 .statistic {
     position: relative;
-    width: 80%;
+    width: calc(100% - 260px);
     left: 220px;
     // margin-left: 220px;
     background-color: $light-color;
-    margin-top: 5%;
+
     font-family: $font-family;
     height: 100vh;
     
@@ -15,12 +15,25 @@
         color: $grey-dark-color;
     }
     .calendar {
-       
+        text-align: center;
         padding: 20px;
         border-bottom: 1px solid $grey-dark-color;
+        input {
+            line-height: 25px;
+            border: 1px solid grey;
+            border-right: none;
+        }
+        .cal {
+            border: 1px solid grey;
+            border-left: none;
+            line-height: 25px;
+            padding: 3px;
+        }
         button {
             background-color: $orange-dark-color;
             border: none;
+            height: 30px;
+            width: 30px;
             span{
                 color: white;
             }
