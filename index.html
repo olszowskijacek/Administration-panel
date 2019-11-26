@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="vendor/fontello/css/fontello.css">
+    <!-- <link rel="stylesheet" href="vendor/fontello/css/fontello.css"> -->
 
     <title>Project Panel</title>
 </head>
@@ -49,11 +49,10 @@
     <nav class="sidebar">
       <div class="logo-header">
           <img class="logo" src="./images/logo.png" alt="LOGO">
-          <a href="#" class="hamburger">
-              <div class="ham"></div>
-              <div class="ham"></div>
-              <div class="ham"></div>
-          </a>
+          <div class="burger">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+          </div>
       </div>
       <ul>
         <li><span class="icon icon-general"></span></i>General</li>
@@ -79,11 +78,17 @@
         <a href="#"><span class="icon-calendar cal"></span></a>
         <button><span class="icon-refresh"></span></button>
       </div>
+      <div class="row">
+        <div class="first-column">
+          <div class="col-md-12">Visit Signups<span>124</span></div>
+          <div>FTD<span>445</span></div>
+        </div>
+          <div class="second-column">
+              <div>Net deposit<span>564</span></div>
+              <div>Turn over<span>432</span></div>
+          </div>
+      </div>
       
-      <div>Visit Signups<span>124</span></div>
-      <div>FTD<span>445</span></div>
-      <div>Net deposit<span>564</span></div>
-      <div>Turn over<span>432</span></div>
       <div class="chart-title">Earning chart</div>
       <div class="legend">
         <p>Signups</p>
@@ -92,6 +97,6 @@
       </div>
       
     </section>
-      
+      <script src="js/script.js"></script>
 </body>
 </html>
