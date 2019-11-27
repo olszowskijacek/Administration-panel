@@ -4,6 +4,7 @@
     left: 220px;
     // margin-left: 220px;
     background-color: $light-color;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 
     font-family: $font-family;
     height: 100vh;
@@ -21,23 +22,69 @@
         input {
             line-height: 25px;
             border: 1px solid grey;
-            border-right: none;
-        }
-        .cal {
-            border: 1px solid grey;
-            border-left: none;
-            line-height: 25px;
-            padding: 3px;
         }
         button {
             background-color: $orange-dark-color;
             border: none;
-            height: 30px;
-            width: 30px;
-            span{
+            border-radius: 10%;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
+            cursor: pointer;
+            transition: 0.2s linear;
+            span {
                 color: white;
             }
         }
+        .btn:hover {
+            background-color: $orange-light-color;
+            transform: scale(1.1);
+        }
     }
 }
+.main-input {
+    text-align: center;
+    height: 40px;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-image: url(/images/icons/calendar.svg);
+    background-position: 250px center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+  }
 
+
+  
+
+
+.chart {
+    text-align: center;
+    margin-top: 30px;
+    font-family: $font-family;
+    color: $grey-dark-color;
+    .row .first-column {
+        width: 50%;
+        margin: 0;
+        float: left;
+        
+    }
+    .row .second-column {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+       
+        
+    }
+    .table-inner {
+        margin: auto;
+        text-align: left;
+        width: 50%;
+        padding: 5px;
+        border-bottom: 1px solid $grey-color;
+        span {
+            // position: absolute;
+            float: right;
+        }
+    }
+}

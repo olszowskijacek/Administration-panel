@@ -432,7 +432,6 @@ body {
   background-color: #e3e3e3;
 }
 
-/* Sidebar */
 .sidebar {
   height: 100vh;
   background-color: black;
@@ -547,11 +546,34 @@ body {
   color: #56819f;
 }
 
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.dropdown .dropdown-content a {
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #ffa200;
+}
+
+.dropdown:hover .dropdown-content {
+  display: -ms-grid;
+  display: grid;
+}
+
 .statistic {
   position: relative;
   width: calc(100% - 260px);
   left: 220px;
   background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", sans-serif;
   height: 100vh;
 }
@@ -572,25 +594,69 @@ body {
 .statistic .calendar input {
   line-height: 25px;
   border: 1px solid grey;
-  border-right: none;
-}
-
-.statistic .calendar .cal {
-  border: 1px solid grey;
-  border-left: none;
-  line-height: 25px;
-  padding: 3px;
 }
 
 .statistic .calendar button {
   background-color: #f58220;
   border: none;
-  height: 30px;
-  width: 30px;
+  border-radius: 10%;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: 0.2s linear;
 }
 
 .statistic .calendar button span {
   color: white;
+}
+
+.statistic .calendar .btn:hover {
+  background-color: #ffa200;
+  transform: scale(1.1);
+}
+
+.main-input {
+  text-align: center;
+  height: 40px;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 60px;
+  background-image: url(/images/icons/calendar.svg);
+  background-position: 250px center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+
+.chart {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #979797;
+}
+
+.chart .row .first-column {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.chart .row .second-column {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+
+.chart .table-inner {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  padding: 5px;
+  border-bottom: 1px solid #989898;
+}
+
+.chart .table-inner span {
+  float: right;
 }
 
 /* Components */
