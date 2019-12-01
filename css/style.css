@@ -659,6 +659,19 @@ body {
   float: right;
 }
 
+.chart .chart-graph canvas {
+  position: relative;
+  left: 0;
+  right: 200px;
+  width: 70%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.chart .chart-graph canvas img {
+  display: block;
+}
+
 /* Components */
 /* Sections */
 /* Pages / Views */
