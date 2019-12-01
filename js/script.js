@@ -39,13 +39,13 @@ var chart = new Chart(ctx, {
         label: 'FTD',
         backgroundColor: '#F29E4E',
         borderColor: '#F29E4E',
-        data: [311, 368, 294, 273, 471, 422, 287, 562, 324, 203]
+        data: [311, 368, 294, 273, 471, 422, 287, 562, 324, 303]
       },
       {
         label: 'Earned',
         backgroundColor: '#71B374',
         borderColor: '#71B374',
-        data: [378, 689, 263, 287, 445, 297, 238, 390, 301, 219],
+        data: [378, 689, 263, 287, 445, 297, 238, 390, 301, 249],
         // 7
         hidden: true
       }

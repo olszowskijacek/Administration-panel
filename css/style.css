@@ -572,17 +572,18 @@ body {
   position: relative;
   width: calc(100% - 260px);
   left: 220px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", sans-serif;
-  height: 100vh;
 }
 
 .statistic .title {
   border-bottom: 1px solid #979797;
-  padding: 5px;
+  padding: 7px;
   text-transform: uppercase;
   color: #979797;
+  font-size: 20px;
 }
 
 .statistic .calendar {
@@ -662,14 +663,50 @@ body {
 .chart .chart-graph canvas {
   position: relative;
   left: 0;
-  right: 200px;
-  width: 70%;
-  height: 300px;
-  border: 2px solid red;
 }
 
-.chart .chart-graph canvas img {
-  display: block;
+.links .btn {
+  text-align: center;
+}
+
+.links .btn button {
+  margin: 20px 0;
+  width: 100px;
+  height: 45px;
+  line-height: 45px;
+  border: none;
+  background-color: #f58220;
+  border-radius: 5%;
+  color: white;
+  transition: 0.2s linear;
+}
+
+.links .btn :hover {
+  background-color: #ffa200;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+}
+
+.content .options {
+  border-top: 1px solid #989898;
+  margin: 10px 150px;
+}
+
+.content .options h3, .content .options a {
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.content h3 {
+  color: #979797;
 }
 
 /* Components */

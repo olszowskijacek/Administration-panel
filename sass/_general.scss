@@ -2,18 +2,18 @@
     position: relative;
     width: calc(100% - 260px);
     left: 220px;
+    margin-bottom: 20px;
     // margin-left: 220px;
     background-color: $light-color;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
 
     font-family: $font-family;
-    height: 100vh;
-    
     .title {
         border-bottom: 1px solid $grey-dark-color;
-        padding: 5px;
+        padding: 7px;
         text-transform: uppercase;
         color: $grey-dark-color;
+        font-size: 20px;
     }
     .calendar {
         text-align: center;
@@ -53,11 +53,6 @@
     background-repeat: no-repeat;
     background-size: 17px;
   }
-
-
-  
-
-
 .chart {
     text-align: center;
     margin-top: 30px;
@@ -72,9 +67,7 @@
     .row .second-column {
         display: inline-block;
         width: 50%;
-        margin: 0;
-       
-        
+        margin: 0;  
     }
     .table-inner {
         margin: auto;
@@ -90,13 +83,46 @@
     .chart-graph canvas {
         position: relative;
         left: 0;
-        right: 200px;
-        width: 70%;
-        height: 300px;
-        border: 2px solid red;
-        img {
-            display: block;
-
+        // border: 2px solid red;
+    }
+}
+.links .btn {
+    text-align: center;
+    button {
+        margin: 20px 0;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        border: none;
+        background-color: $orange-dark-color;
+        border-radius: 5%;
+        color: white;
+        transition: 0.2s linear;
+    }
+    :hover {
+            background-color: $orange-light-color;
+            transform: scale(1.1);
+            cursor: pointer;
+    }
+    
+}
+.content {
+    text-align: center;
+    .options {
+        border-top: 1px solid $grey-color;
+        margin: 10px 150px;  
+        h3, a {
+        
+            width: 400px;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            text-align: left;
+            text-decoration: none;
         }
+    }
+    
+    h3 {
+        color: $grey-dark-color;
     }
 }
