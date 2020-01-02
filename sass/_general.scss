@@ -6,7 +6,7 @@
     // margin-left: 220px;
     background-color: $light-color;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
-
+    min-width: 500px;
     font-family: $font-family;
     .title {
         border-bottom: 1px solid $grey-dark-color;
@@ -62,7 +62,6 @@
         width: 50%;
         margin: 0;
         float: left;
-        
     }
     .row .second-column {
         display: inline-block;
@@ -124,5 +123,26 @@
     
     h3 {
         color: $grey-dark-color;
+    }
+}
+
+@media (max-width: 800px) {
+    .chart .row .first-column {
+        width: 100%;
+        div {
+            font-size: 12px;
+        }
+    }
+    .chart .row .second-column {
+        width: 100%;
+        div {
+            font-size: 12px;
+        }
+    }
+    .statistic {
+    width: 100%;
+    left: 50px;
+    align-content: center;
+    
     }
 }

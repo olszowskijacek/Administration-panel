@@ -575,6 +575,7 @@ body {
   margin-bottom: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 500px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -707,6 +708,27 @@ body {
 
 .content h3 {
   color: #979797;
+}
+
+@media (max-width: 800px) {
+  .chart .row .first-column {
+    width: 100%;
+  }
+  .chart .row .first-column div {
+    font-size: 12px;
+  }
+  .chart .row .second-column {
+    width: 100%;
+  }
+  .chart .row .second-column div {
+    font-size: 12px;
+  }
+  .statistic {
+    width: 100%;
+    left: 50px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 /* Components */
